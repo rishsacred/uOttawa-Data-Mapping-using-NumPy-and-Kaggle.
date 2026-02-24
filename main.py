@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('Age')  # Use a non-GUI backend to avoid font issues
+matplotlib.use('Agg')  # Use a non-GUI backend to avoid font issues
 
 import pandas as pd
 import numpy as np
@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 # Load dataset
 df = pd.read_csv("heart.csv")  # Ensure heart.csv is in the same folder as your script
 print(df.head())
-
+''
 # Explore the dataset
 print(df.info())
 print(df.describe())
